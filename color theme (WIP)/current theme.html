@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>5eTools Color Theme</title>
+
+    <link rel="stylesheet" href="style.css">
+
+    <script>
+        window.addEventListener("load", function() {
+            var container = document.getElementById('light-container');
+            var oldswatches = document.getElementById('flex-container');
+            container.innerHTML = oldswatches.innerHTML;
+        });
+    </script>
+    <script>
+        window.addEventListener("load", function() {
+            var colorPtags = document.getElementsByClassName('color-hex');
+            for (let el of colorPtags) {
+                el.parentNode.style.backgroundColor = el.innerHTML;
+            }
+        });
+    </script>
+</head>
+
+<body>
+    <h1>UI Colors (Day Mode)</h1>
+
+    <div id="flex-container">
+        <div>
+            <p class="color-name">Banner (Adventure Blue)</p>
+            <p class="color-hex">#006BC4</p>
+        </div>
+        <div class="invert">
+            <p class="color-name">Player Icons</p>
+            <p class="color-hex">dodgerblue</p>
+        </div>
+        <div>
+            <p class="color-name">Rules Icons</p>
+            <p class="color-hex">#33a5a5</p>
+        </div>
+        <div>
+            <p class="color-name">DM Icons</p>
+            <p class="color-hex">darkviolet</p>
+        </div>
+        <div>
+            <p class="color-name">Text Link, Filter Pill "Yes"</p>
+            <p class="color-hex">#337ab7</p>
+        </div>
+        <div>
+            <p class="color-name">Text Danger (from Bootstrap)</p>
+            <p class="color-hex">#a94442</p>
+        </div>
+        <div>
+            <p class="color-name">Code (text)</p>
+            <p class="color-hex">#c7254e</p>
+        </div>
+        <div>
+            <p class="color-name">Code (highlight)</p>
+            <p class="color-hex">#f9f2f4</p>
+        </div>
+        <div>
+            <p class="color-name">Manage Homebrew button</p>
+            <p class="color-hex">#5bc0de</p>
+        </div>
+        <div>
+            <p class="color-name">Pill box: Official source</p>
+            <p class="color-hex">#48637a</p>
+        </div>
+        <div>
+            <p class="color-name">Filter Pill "No"</p>
+            <p class="color-hex">#8a1a1b</p>
+        </div>
+<!--
+        div>p.color-name{}+p.color-hex{}
+        div>p.color-name{}+p.color-hex{}
+        div>p.color-name{}+p.color-hex{}
+        div>p.color-name{}+p.color-hex{}
+        div>p.color-name{}+p.color-hex{}
+-->
+    </div>
+</body></html>

@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<title>5eTools Color Theme</title>
+
+	<link rel="stylesheet" href="style.css">
+
+	<script>
+		window.addEventListener("load", function() {
+			var container = document.getElementById('light-container');
+			var oldswatches = document.getElementById('flex-container');
+			container.innerHTML = oldswatches.innerHTML;
+		});
+	</script>
+	<script>
+		window.addEventListener("load", function() {
+			var colorPtags = document.getElementsByClassName('color-hex');
+			for (let el of colorPtags) {
+				el.parentNode.style.backgroundColor = el.innerHTML;
+			}
+		});
+	</script>
+</head>
+
+<body>
+	<div id="flex-container">
+		<div>
+			<p class="color-name">Adventure Blue</p>
+			<p class="color-hex">#006BC4</p>
+		</div>
+		<div class="invert">
+			<p class="color-name">Gelatinous Cube</p>
+			<p class="color-hex">#1998FF</p>
+		</div>
+		<div>
+			<p class="color-name">Barovian Midnight</p>
+			<p class="color-hex">#004278</p>
+		</div>
+		<div>
+			<p class="color-name">???</p>
+			<p class="color-hex">#AF415E</p>
+		</div>
+	</div>
+	<div id="light-container"></div>
+</body></html>

@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>5eTools Color Theme</title>
+
+    <link rel="stylesheet" href="style.css">
+
+    <script>
+        window.addEventListener("load", function() {
+            var container = document.getElementById('light-container');
+            var oldswatches = document.getElementById('flex-container');
+            container.innerHTML = oldswatches.innerHTML;
+        });
+    </script>
+    <script>
+        window.addEventListener("load", function() {
+            var colorPtags = document.getElementsByClassName('color-hex');
+            for (let el of colorPtags) {
+                el.parentNode.style.backgroundColor = el.innerHTML;
+            }
+        });
+    </script>
+</head>
+
+<body>
+    <h2>Book Colors</h2>
+    <div id="flex-container">
+        <div>
+            <p class="color-name">PHB</p>
+            <p class="color-hex">#4a6898</p>
+        </div>
+        <div>
+            <p class="color-name">DMG</p>
+            <p class="color-hex">purple</p>
+        </div>
+        <div>
+            <p class="color-name">MM</p>
+            <p class="color-hex">green</p>
+        </div>
+        <div>
+            <p class="color-name">SCAG</p>
+            <p class="color-hex">#76af76</p>
+        </div>
+        <div>
+            <p class="color-name">VGM</p>
+            <p class="color-hex">grey</p>
+        </div>
+        <div>
+            <p class="color-name">XGE</p>
+            <p class="color-hex">#ba7c00</p>
+        </div>
+        <div>
+            <p class="color-name">HotDQ</p>
+            <p class="color-hex">#ad8eba</p>
+        </div>
+        <div>
+            <p class="color-name">RoT</p>
+            <p class="color-hex">#ff2900</p>
+        </div>
+        <div>
+            <p class="color-name">CoS</p>
+            <p class="color-hex">purple</p>
+        </div>
+        <div>
+            <p class="color-name">OotA</p>
+            <p class="color-hex">grey</p>
+        </div>
+        <div>
+            <p class="color-name">SKT</p>
+            <p class="color-hex">darkcyan</p>
+        </div>
+        <div>
+            <p class="color-name">PotA</p>
+            <p class="color-hex">#57b6c6</p>
+        </div>
+        <div>
+            <p class="color-name">LMoP</p>
+            <p class="color-hex">#8da851</p>
+        </div>
+        <div>
+            <p class="color-name">TftYP</p>
+            <p class="color-hex">red</p>
+        </div>
+        <div>
+            <p class="color-name">ToA</p>
+            <p class="color-hex">#666f30</p>
+        </div>
+        <div>
+            <p class="color-name">MTF</p>
+            <p class="color-hex">#1f6e7b</p>
+        </div>
+        <div>
+            <p class="color-name">WDH</p>
+            <p class="color-hex">#d4af37</p>
+        </div>
+        <div>
+            <p class="color-name">GGR</p>
+            <p class="color-hex">#bfa76c</p>
+        </div>
+        <div>
+            <p class="color-name">WDMM</p>
+            <p class="color-hex">#a2201f</p>
+        </div>
+        <div>
+            <p class="color-name">LLK</p>
+            <p class="color-hex">#6e7a71</p>
+        </div>
+        <div>
+            <p class="color-name">GoS</p>
+            <p class="color-hex">#3d695a</p>
+        </div>
+        <div>
+            <p class="color-name">AI</p>
+            <p class="color-hex">#5baf04</p>
+        </div>
+        <div>
+            <p class="color-name">ESK</p>
+            <p class="color-hex">#6b909a</p>
+        </div>
+        <div>
+            <p class="color-name">BGDIA</p>
+            <p class="color-hex">#752418</p>
+        </div>
+        <div>
+            <p class="color-name">ERLW</p>
+            <p class="color-hex">#983426</p>
+        </div>
+        <div>
+            <p class="color-name">RMR</p>
+            <p class="color-hex">#5c7c27</p>
+        </div>
+        <div>
+            <p class="color-name">MFF</p>
+            <p class="color-hex">#92817f</p>
+        </div>
+        <div>
+            <p class="color-name">LR</p>
+            <p class="color-hex">#78613c</p>
+        </div>
+        <div>
+            <p class="color-name">IMR</p>
+            <p class="color-hex">#a19364</p>
+        </div>
+        <div>
+            <p class="color-name">SADS</p>
+            <p class="color-hex">#333bab</p>
+        </div>
+        <div>
+            <p class="color-name">EGW</p>
+            <p class="color-hex">#855a6e</p>
+        </div>
+        <div>
+            <p class="color-name">MOT</p>
+            <p class="color-hex">#556b2e</p>
+        </div>
+        <div>
+            <p class="color-name">IDRotF</p>
+            <p class="color-hex">#8fb8c0</p>
+        </div>
+        <div>
+            <p class="color-name">TCE</p>
+            <p class="color-hex">#a24d08</p>
+        </div>
+        <div>
+            <p class="color-name">AL</p>
+            <p class="color-hex">#e50711</p>
+        </div>
+        <!--div>p.color-name{}+p.color-hex{}-->
+    </div>
+    <div class="light-container"></div>
+</body></html>

@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<title>5eTools Color Theme</title>
+
+	<link rel="stylesheet" href="style.css">
+	<script>
+		window.addEventListener("load", function() {
+			var container = document.getElementById('light-container');
+			var oldswatches = document.getElementById('flex-container');
+			container.innerHTML = oldswatches.innerHTML;
+		});
+	</script>
+	<script>
+		window.addEventListener("load", function() {
+			var colorPtags = document.getElementsByClassName('color-hex');
+			for (let el of colorPtags) {
+				el.parentNode.style.backgroundColor = el.innerHTML;
+			}
+		});
+	</script>
+</head>
+
+<body>
+	<div id="flex-container">
+		<div>
+			<p class="color-name">Adventure Blue</p>
+			<p class="color-hex">#006BC4</p>
+			<!-- hsv(207, 100%, 76%) -->
+		</div>
+		<div>
+			<p class="color-name">Salamander</p>
+			<p class="color-hex">#DE7E3D</p>
+			<!-- hsv(24, 72%, 87%) -->
+			<!-- alt?: hsv(24, 86%, 87%) -->
+		</div>
+		<div>
+			<p class="color-name"></p>
+			<p class="color-hex">#f07e2e</p>
+			<!-- hsv(25, 80%, 94%) -->
+		</div>
+		<div class="">
+			<p class="color-name">Gelatinous Cube</p>
+			<p class="color-hex">#1998FF</p>
+			<!-- hsv(207, 90%, 100%) -->
+		</div>
+		<div>
+			<p class="color-name">Barovian Midnight</p>
+			<p class="color-hex">#004278</p>
+			<!-- hsv(207, 100%, 47%) -->
+			<!-- from Adobe Color (Complementary) -->
+		</div>
+		<div>
+			<p class="color-name"></p>
+			<p class="color-hex">#0C4778</p>
+			<!-- from Adobe Color (Triad) -->
+		</div>
+		<div>
+			<p class="color-name"></p>
+			<p class="color-hex">#C41A14</p>
+			<!-- from Adobe Color (Triad) -->
+		</div>
+		<div>
+			<p class="color-name"></p>
+			<p class="color-hex">#AF415E</p>
+			<!-- hsv(344, 62%, 68%) -->
+		</div>
+		<div>
+			<p class="color-name"></p>
+			<p class="color-hex">#784900</p>
+			<!-- from Adobe Color (Complementary) -->
+		</div>
+		<div>
+			<p class="color-name"></p>
+			<p class="color-hex">#C47700</p>
+			<!-- from Adobe Color (Complementary) -->
+		</div>
+		<div>
+			<p class="color-name"></p>
+			<p class="color-hex">#1DBDA1</p>
+			<!-- hsv(169, 84%, 74%) -->
+			<!-- kind of an aqua green -->
+		</div>
+		<div>
+			<p class="color-name"></p>
+			<p class="color-hex">#0AD1C1</p>
+			<!-- kind of an aqua green -->
+			<!-- from Adobe Color (Analogous) -->
+		</div>
+		<div>
+			<p class="color-name"></p>
+			<p class="color-hex">#3CBCC2</p>
+			<!-- kind of an aqua blue -->
+		</div>
+		<div>
+			<p class="color-name"></p>
+			<p class="color-hex">#0BB4DB</p>
+			<!-- kind of an aqua blue -->
+			<!-- from Adobe Color (Analogous) -->
+		</div>
+		<div>
+			<p class="color-name"></p>
+			<p class="color-hex">#CBBB6B</p>
+		</div>
+		<div>
+			<p class="color-name"></p>
+			<p class="color-hex">#C18B45</p>
+		</div>
+		<div>
+			<p class="color-name"></p>
+			<p class="color-hex">#E6DA5C</p>
+		</div>
+	</div>
+	<div id="light-container"></div>
+</body></html>
